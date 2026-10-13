@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A. Jesra Begam | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4253035a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo"><span>J</span>esra Begam</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Computer Science & Engineering (IoT) | MERN Stack Developer | AI Learner | UI/UX Designer</p>
+                <h1>Hi, I'm <span>A. Jesra Begam</span><br> CSE (IoT) Student</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/jesra_hijab_ai.png" alt="AI-generated portrait of a Muslim girl wearing a black hijab">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I’m A. Jesra Begam, a B.E. Computer Science and Engineering (Internet of Things) student at Nandha Engineering College. I enjoy building full-stack web applications, AI-based tools, and IoT solutions. My interests include MERN stack development, AI/ML, and UI/UX design. I’m always learning, building practical projects, and improving my problem-solving skills.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web & MERN Stack</span><br>HTML, CSS, JavaScript, React.js, Node.js, Express.js, MongoDB, MySQL, Bootstrap</li>
+                            <li><span>UI/UX Design</span><br>Figma, Wireframing, Prototyping, User-Centered Design, Canva</li>
+                            <li><span>AI, Programming & IoT</span><br>Python, Java, C, AI/ML fundamentals, NLP basics, ESP32, Arduino IDE, Sensors, Embedded Systems</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024 - 2028</span><br>B.E. Computer Science and Engineering (Internet of Things), Nandha Engineering College, Erode</li>
+                            <li><span>Projects</span><br>Full-stack web development and IoT project development using MERN technologies and ESP32</li>
+                            <li><span>Projects</span><br>AI-based tools, language translation, FAQ chatbot, and object detection/tracking</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024 - 2028</span><br>B.E. Computer Science and Engineering (Internet of Things), Nandha Engineering College, Erode</li>
+                            <li><span>Higher Secondary</span><br>12th Standard</li>
+                            <li><span>Secondary</span><br>10th Standard</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Building responsive and user-friendly websites using HTML, CSS, JavaScript, React.js, Node.js, Express.js, and Bootstrap.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>MERN Stack Development</h2>
+                    <p>Developing full-stack web applications with React.js, Node.js, Express.js, MongoDB, and MySQL, including REST APIs and database integration.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Creating intuitive, user-centered web and app interfaces using Figma, with a focus on clean layouts, usability, and responsive design.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/wor1.jpeg" alt="Code debugger project preview">
+                    <div class="layer">
+                        <h3>Gesture & Voice-Based Code Debugger</h3>
+                        <p>An assistive debugging project using voice commands and gesture input with ESP32 and Python tools.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/smart_waste_segregation.png" alt="Smart waste segregation and monitoring system project preview">
+                    <div class="layer">
+                        <h3>Smart Waste Segregation and Monitoring System</h3>
+                        <p>An IoT-based smart bin concept for segregating wet, plastic, metal, and bio waste, with sensor monitoring, alerts, and a dashboard using ESP32 and ThingSpeak.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/wor2.jpeg" alt="Language translation tool preview">
+                    <div class="layer">
+                        <h3>AI Language Translation Tool</h3>
+                        <p>A Streamlit application for translating text between languages, including Tamil, Hindi, and Arabic.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/wor3.jpeg" alt="AI projects preview">
+                    <div class="layer">
+                        <h3>FAQ Chatbot & Object Detection</h3>
+                        <p>AI projects using NLP/TF-IDF for FAQ responses and YOLO-based object detection and tracking.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> contact@example.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> +1 234 567 8900</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="#" class="btn btn2" download>Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © A. Jesra Begam</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
